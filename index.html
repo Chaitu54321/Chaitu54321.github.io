@@ -107,6 +107,50 @@
   transform: scale(1.1);
 }
 
+/* Project Buttons Styles */
+.project-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-project {
+  font-size: 13px !important;
+  padding: 8px 18px !important;
+  border-radius: 30px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-live {
+  background: var(--gold) !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(245, 166, 35, 0.3) !important;
+}
+
+.btn-live:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.5) !important;
+  background: #ffb338 !important;
+}
+
+.btn-github {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(8px);
+}
+
+.btn-github:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-2px) !important;
+  border-color: var(--gold) !important;
+}
 
 </style>
 
@@ -282,11 +326,9 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>I am an aspiring machine learning engineer from Anu University with a strong foundation in Python, data structures, algorithms, and machine learning.
-									 As an active problem solver, I maintain an 80+ day streak on LeetCode and GeeksforGeeks. My passion for AI is further demonstrated through 
-									 various machine learning projects that have helped me deepen my expertise.</p>
+								<p>Aspiring Full Stack AI Engineer and B.Tech Artificial Intelligence student at Anurag University with strong skills in Python, backend development, and machine learning. Experienced in building scalable AI systems such as an AI-powered Medical Assistant using RAG and a high-performance link analytics platform. Active competitive programmer with 860+ DSA problems solved and leadership experience as President of the AUDAO Club.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Domain:</span> <span>Machine Learning</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Full Stack AI</span></li>
 									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Telugu, Hindi</span></li>
 									<li class="d-flex"><span>Other Skills:</span> <span> Photo Editing and Video Editing</span></li>
@@ -335,14 +377,14 @@
 		<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">Jul 2024-Sep 2024</span>
-						<h2>Google Cloud(AICTE)</h2>
+						<span class="date">Sep 2025-Nov 2025</span>
+						<h2>Infosys Springboard</h2>
 						<span class="position">Virtual Intern</span>
 						<p class="mt-4"> 
 							<ul>
-								Gained hands-on experience in Android app development by collaborating on team projects, focusing on UI/UX design, API
-integration, and best coding practices using Kotlin and Android Studio. Enhanced problem-solving and debugging skills while
-participating in code reviews and implementing feedback to improve app functionality.
+								VisionMate (Computer Vision Project)
+                <br>
+								Developed an AI-powered assistive system that uses computer vision to detect objects in real time and provide voice feedback for visually impaired users. Trained an object detection model (YOLO) on curated datasets and integrated a Text-to-Speech module to deliver real-time audio guidance for safer navigation and obstacle awareness.
 
 							</ul>
 						</p>
@@ -401,7 +443,7 @@ engagement in cultural preservation initiatives. Successfully collected the data
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/12yHiJNqZ8fa1k3esu5riHK0omnAmXOpM/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="https://drive.google.com/file/d/1n029ne4Dnem9bWr76h0eo3AivtzyrCWF/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -420,23 +462,30 @@ engagement in cultural preservation initiatives. Successfully collected the data
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Chaitu54321/medicalchatbot" class="block-20 zoom-effect" style="background-image: url('images/medc.jpg');">
+              <a href="https://github.com/Chaitu54321/LinkForge" class="block-20 zoom-effect" style="background-image: url('images/urlsrtnr.png');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/Chaitu54321/medicalchatbot">RAG Medical Chatbot</a></h3>
-                <p>Analyzes your question based upon heart and gives you the correct output.</p>
+                <h3 class="heading"><a href="https://github.com/Chaitu54321/LinkForge">LinkForge — Scalable Smart Link Platform</a></h3>
+                <p>Built a scalable URL shortening system using React, FastAPI, PostgreSQL, and Redis with sub-10 ms redirects via Redis caching, event-driven analytics processing, distributed rate limiting, and containerized cloud deployment.</p>
+                <div class="project-buttons">
+                  <a href="https://linkforge-six.vercel.app" target="_blank" class="btn-project btn-live">Live Demo</a>
+                  <a href="https://github.com/Chaitu54321/LinkForge" target="_blank" class="btn-project btn-github">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Chaitu54321/Cats-vs-dogs-MLproject" class="block-20 zoom-effect" style="background-image: url('images/catd.jpeg');">
+              <a href="https://github.com/Chaitu54321/Medical_Agent" class="block-20 zoom-effect" style="background-image: url('images/medc.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/Chaitu54321/Cats-vs-dogs-MLproject">Identificationof cats or dogs using Keras and Tensorflow</a></h3>
-                <p>In this project, I built a neural network using TensorFlow and Keras to classify images as either dogs or cats.</p>
+                <h3 class="heading"><a href="https://github.com/Chaitu54321/Medical_Agent">RAG Medical Chatbot</a></h3>
+                <p>Developed a retrieval-augmented medical chatbot using FastAPI and LLaMA 3.1 (Groq), processing 10k+ medical documents for accurate responses, optimized retrieval for faster inference, and automated dataset collection via multithreaded web scraping.</p>
+                <div class="project-buttons">
+                  <a href="https://github.com/Chaitu54321/Medical_Agent" target="_blank" class="btn-project btn-github">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
@@ -448,7 +497,10 @@ engagement in cultural preservation initiatives. Successfully collected the data
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://github.com/Chaitu54321/FlashCardGeneratorAI">Flashcards generator using AI</a></h3>
-                <p>In this project, I built a flashcard generator to help students quickly revise for their exams.</p>
+                <p>Developed an AI-powered system that converts study materials into structured flashcards, enabling faster revision and improving study efficiency by automatically generating key questions and answers.</p>
+                <div class="project-buttons">
+                  <a href="https://github.com/Chaitu54321/FlashCardGeneratorAI" target="_blank" class="btn-project btn-github">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
@@ -478,7 +530,7 @@ engagement in cultural preservation initiatives. Successfully collected the data
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="800">0</strong>
+                <strong class="number" data-number="900">0</strong>
                 <span>Solved problem at online coding platforms</span>
               </div>
             </div>
@@ -549,7 +601,7 @@ engagement in cultural preservation initiatives. Successfully collected the data
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/12yHiJNqZ8fa1k3esu5riHK0omnAmXOpM/view?usp=sharing">Click Here</a></p>
+	            <p><a href="https://drive.google.com/file/d/1n029ne4Dnem9bWr76h0eo3AivtzyrCWF/view?usp=sharing">Click Here</a></p>
 	          </div>
           </div>
 
